@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/RedioGroup_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="100dp">
+
+        <RadioButton
+            android:id="@+id/radioBtn_Taipei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:layout_marginTop="20dp"
+            android:drawableEnd="@drawable/new_taipei_city"
+            android:drawablePadding="100dp"
+            android:text="新北"
+            android:textColor="#3F51B5"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <RadioButton
+            android:id="@+id/radiobtn_NewTaipei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/taipei_city"
+            android:text="台北"
+            android:textColor="#3F51B5"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+        <RadioButton
+            android:id="@+id/radiobtn_Taoyan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/taouyuan_logo"
+            android:text="桃園"
+            android:textColor="#3F51B5"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/check_Button_food1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/bf1"
+            android:drawablePadding="100dp"
+            android:text=""
+            android:textColor="#388E3C"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/check_Button_food2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/bf2"
+            android:drawablePadding="100dp"
+            android:text=""
+            android:textColor="#388E3C"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/check_Button_food3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/bf3"
+            android:drawablePadding="100dp"
+            android:text=""
+            android:textColor="#388E3C"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/check_Button_food4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/bf4"
+            android:drawablePadding="100dp"
+            android:text=""
+            android:textColor="#388E3C"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp">
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FFEB3B"
+            android:text="@string/Select"
+            android:textColor="#673AB7"
+            android:textColorHighlight="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@+id/btn_select"
+
+            android:backgroundTint="#FF5722"
+            android:text="@string/Cacel"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ShowResult"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:textColor="#290E0E"
+        android:textSize="32sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+</LinearLayout>
